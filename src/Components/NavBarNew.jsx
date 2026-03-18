@@ -61,8 +61,8 @@ const NavBarNew = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-100 w-screen">
       <div ref={navBarRef} className="px-6 md:px-24 mx-auto py-6 md:py-15 flex items-center justify-between relative">
-        <img src="" alt="Rewise" className="h-10 md:h-12 w-auto logo" />
-
+        {/* <img src="" alt="Rewise" className="h-10 md:h-12 w-auto logo" /> */}
+ <span className="text-3xl  text-black">rewise</span>
         <div className="cursor-pointer" onClick={openMenu}>
           <img className="w-10 h-10" src={menuIcon} alt="open menu" />
         </div>
@@ -71,11 +71,12 @@ const NavBarNew = () => {
       {/* Full screen menu overlay */}
       <div
         ref={menuRef}
-        className="fixed top-0 left-0 w-screen h-screen bg-[#007BFF] nav-menu px-6 md:px-15 py-6 md:py-15 flex flex-col justify-between"
+        className="fixed top-0 left-0 w-screen h-screen nav-menu px-6 md:px-15 py-6 md:py-15 flex flex-col justify-between"
+        style={{ backgroundColor: '#0040c1' }}
       >
         {/* Top bar */}
         <div className="flex items-center justify-between">
-          <img src="" alt="Rewise" className="h-10 md:h-12 w-auto" />
+          <span className="text-2xl font-bold text-white">REWISE</span>
           <div className="cursor-pointer" onClick={closeMenu}>
             <img src={closeIcon} className="w-10 h-10" alt="close menu" />
           </div>
