@@ -155,8 +155,8 @@ const Home = () => {
           </div>
 
           {/* App Download Section Inside Blue Box */}
-          <div className="relative z-10 text-center mt-24">
-            <h2 className="text-3xl font-bold text-white mb-4">Download Our App Today</h2>
+          <div className="relative z-10 text-center mt-28">
+            <h2 className="text-3xl font-medium text-white mb-4">Download Our App Today</h2>
             <p className="text-lg text-white max-w-2xl mx-auto mb-8">
               Learn smarter, grow faster with Rewise. Get instant access to thousands of learning resources.
             </p>
