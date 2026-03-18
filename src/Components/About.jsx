@@ -1,9 +1,14 @@
 import React from "react";
+import AboutCard from "../elements/AboutCard";
 
 const About = () => {
   return (
     <div className="h-screen flex items-center justify-center">
-      <div className="flex flex-col items-center gap-20">
+      <div className="flex flex-col items-center gap-20 w-[80vw] relative">
+        <AboutCard left="left-0" top="-top-20"/>
+        <AboutCard right="right-0" top="top-5"/>
+        <AboutCard bottom="-bottom-10" left="left-20"/>
+        <AboutCard bottom="-bottom-20" right="right-30"/>
         <div className="flex flex-col items-center text-7xl font-light leading-18 text-[#0040c1]">
           <blockquote>Our app is an </blockquote>
           <blockquote>all-in-one solution for</blockquote>{" "}
