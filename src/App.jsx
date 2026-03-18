@@ -1,3 +1,4 @@
+import About from "./Components/About"
 import Home from "./Components/Home"
 import NavBarNew from "./Components/NavBarNew"
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
     <NavBarNew/>
     <Home/>
+    <About/>
     </>
   )
 }
