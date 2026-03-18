@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AboutCard = ({ 
-  bgColor = 'bg-amber-400', 
+  bgColor = 'bg-[#0040c1]', 
   width = 'w-50', 
   height = 'h-25', 
   left,
@@ -10,7 +10,7 @@ const AboutCard = ({
   bottom,
 }) => {
   return (
-    <div className={`absolute rounded-full ${bgColor} ${width} ${height} ${left || ''} ${top} ${right || ''} ${bottom || ''}`}>
+    <div className={`absolute opacity-70 rounded-full ${bgColor} ${width} ${height} ${left || ''} ${top} ${right || ''} ${bottom || ''}`}>
       
     </div>
   )
