@@ -1,10 +1,13 @@
+import Home from "./Components/Home"
+import NavBarNew from "./Components/NavBarNew"
 
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <NavBarNew/>
+    <Home/>
+    </>
   )
 }
 
