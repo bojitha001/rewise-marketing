@@ -1,8 +1,30 @@
 import React from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Features = () => {
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: ".features-section",
+      start: "top bottom",
+      onEnter: () =>
+        gsap.to(
+          [".benifit-section", ".benifit-1", ".benifit-2"],
+          { autoAlpha: 0, duration: 0.4, ease: "power2.out", pointerEvents: "none" }
+        ),
+      onLeaveBack: () =>
+        gsap.to(
+          [".benifit-section", ".benifit-1", ".benifit-2"],
+          { autoAlpha: 1, duration: 0.4, ease: "power2.out", pointerEvents: "auto" }
+        ),
+    });
+  })
+
   return (
-    <div className='h-[150vh] px-24 mt-24'>
+    <div className='h-[150vh] px-24 mt-24 features-section relative z-100'>
       <div className='text-center text-7xl font-light leading-20'>
         <p>Explore Our</p>
         <p className='text-[#0040c1]'>Standout Features</p>
