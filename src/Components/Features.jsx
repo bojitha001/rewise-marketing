@@ -2,7 +2,7 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div className='h-[200vh] px-24 mt-24'>
+    <div className='h-[150vh] px-24 mt-24'>
       <div className='text-center text-7xl font-light leading-20'>
         <p>Explore Our</p>
         <p className='text-[#0040c1]'>Standout Features</p>
