@@ -12,6 +12,7 @@ import Benifit1 from "./Components/Benifit1"
 import Benifit2 from "./Components/Benifit2"
 import BenifitText from "./Components/BenifitText"
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
     <NavBarNew/>
     <Home/>
     <About/>
-    {/* <BenifitText/> */}
+    <BenifitText/>
     <Benefits/>
     <Benifit1/>
     <Benifit2/>

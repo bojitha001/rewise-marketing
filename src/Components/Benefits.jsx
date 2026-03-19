@@ -14,7 +14,7 @@ const Benefits = () => {
       scrollTrigger: {
         trigger: ".benifit-section",
         start: "top 5%",
-        end: "+=300%",
+        end: "+=200%",
         scrub: true,
         markers: true,
         pin: true,
@@ -40,22 +40,19 @@ const Benefits = () => {
         yPercent: 0,
         ease: "none",
       })
-      .to(".benifit-section", {
-        opacity: 0,
-      })
+      
        .to(".benifit-2", {
         width: "95vw",  
         height: "95vh",
         top: "2.5vh",
-        left: "2.5vw",})
+        left: "2.5vw",}).to(".benifit-section", {
+        opacity: 0,
+      })
   });
 
   return (
     <>
-      {/* <div className="text-center text-7xl font-light leading-20">
-        <p>Experience The </p>
-        <p className="text-[#0040c1]">Future of Learning</p>
-      </div> */}
+      
       <div className="h-screen relative top-0 left-0 right-0 z-30 mt-24 px-24 benifit-section bg-black">
 
       </div>
