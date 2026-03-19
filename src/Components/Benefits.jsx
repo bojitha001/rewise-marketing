@@ -53,8 +53,8 @@ const Benefits = () => {
   return (
     <>
       
-      <div className="h-screen relative top-0 left-0 right-0 z-30 mt-24 px-24 benifit-section bg-black">
-
+      <div className="h-screen text-white relative top-0 left-0 right-0 z-30 mt-24 px-24 benifit-section bg-black">
+Benifit 1
       </div>
     </>
   );
