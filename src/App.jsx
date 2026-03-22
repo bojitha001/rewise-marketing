@@ -4,7 +4,7 @@ import Features from "./Components/Features"
 import Footer from "./Components/Footer"
 import Home from "./Components/Home"
 import NavBarNew from "./Components/NavBarNew"
-
+import PricingMain from "./Components/Pricing/Pricing-main"
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
     <Features/>
     <FAQ/>
     <Footer/>
+    <PricingMain/>
     </>
   )
 }
