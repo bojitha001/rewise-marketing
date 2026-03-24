@@ -19,7 +19,6 @@ const PricingMain = () => {
       <section>
         <PricingDescription />
       </section>
-      <Footer />
     </div>
   );
 };

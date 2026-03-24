@@ -35,7 +35,7 @@ const FAQ = () => {
   }
 
   return (
-    <div className="px-24 py-24 bg-gradient-to-b from-white to-blue-50">
+    <div className="px-24 py-24 h-screen bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 flex gap-5">

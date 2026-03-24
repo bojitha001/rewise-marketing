@@ -49,13 +49,13 @@ const plans = [
 const PricingComparePlans = () => {
   return (
     <>
-      <div className="flex flex-col w-full px-4 md:px-8 lg:px-16">
+      <div className="flex flex-col items-center w-full px-4 md:px-8 lg:px-16">
         <div className="text-center mb-15">
               <div className="">
                   <p className="text-7xl">Compare <span className="text-[#0040c1]">Plans</span></p>
               </div>
         </div>
-        <div className="overflow-x-auto w-full rounded-xl">
+        <div className="w-full max-w-[100rem] overflow-x-auto rounded-xl">
           <table className="min-w-full table-auto border border-gray-200">
             <thead className="bg-blue-100">
               <tr>
