@@ -35,19 +35,19 @@ const FAQ = () => {
   }
 
   return (
-    <div className="px-24 py-28">
+    <div className="px-6 md:px-16 lg:px-24 py-16 md:py-28">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="flex items-start justify-between mb-16">
-          <div className="text-7xl font-light leading-[1.15]">
+        <div className="flex flex-col md:flex-row items-start justify-between mb-10 md:mb-16 gap-4 md:gap-0">
+          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.15]">
             <p>Frequently</p>
             <p className="text-[#0040c1]">Asked Questions</p>
           </div>
-          <div className="max-w-xs mt-4">
-            <p className="text-gray-400 font-light text-base leading-relaxed">
+          <div className="max-w-xs md:mt-4">
+            <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed">
               Can't find what you're looking for? Reach out to our support team anytime.
             </p>
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex items-center gap-2 mt-3 md:mt-4">
               <div className="w-2 h-2 rounded-full bg-[#0040c1]" />
               <a href="#" className="text-sm text-[#0040c1] font-medium hover:underline">Contact Support</a>
             </div>
@@ -67,25 +67,25 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-8 py-6 flex items-center justify-between cursor-pointer"
+                className="w-full px-5 py-4 md:px-8 md:py-6 flex items-center justify-between cursor-pointer"
               >
-                <div className="flex items-center gap-4">
-                  <span className={`text-sm font-light tabular-nums ${
+                <div className="flex items-center gap-3 md:gap-4">
+                  <span className={`text-xs md:text-sm font-light tabular-nums ${
                     openIndex === index ? 'text-white/50' : 'text-gray-300'
                   }`}>
                     0{index + 1}
                   </span>
-                  <span className={`text-lg font-light text-left ${
+                  <span className={`text-base md:text-lg font-light text-left ${
                     openIndex === index ? 'text-white' : 'text-gray-800'
                   }`}>
                     {faq.question}
                   </span>
                 </div>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
+                <div className={`w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
                   openIndex === index ? 'bg-white/20 rotate-45' : 'bg-[#0040c115]'
                 }`}>
                   <svg
-                    className={`w-4 h-4 transition-colors ${
+                    className={`w-3.5 h-3.5 md:w-4 md:h-4 transition-colors ${
                       openIndex === index ? 'text-white' : 'text-[#0040c1]'
                     }`}
                     fill="none"
@@ -106,9 +106,9 @@ const FAQ = () => {
                   opacity: openIndex === index ? 1 : 0,
                 }}
               >
-                <div className="px-8 pb-6">
-                  <div className="pl-9 border-l border-white/20 ml-1">
-                    <p className="text-white/80 font-light leading-relaxed text-base">
+                <div className="px-5 pb-4 md:px-8 md:pb-6">
+                  <div className="pl-7 md:pl-9 border-l border-white/20 ml-1">
+                    <p className="text-white/80 font-light leading-relaxed text-sm md:text-base">
                       {faq.answer}
                     </p>
                   </div>
@@ -119,12 +119,12 @@ const FAQ = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 flex items-center justify-between bg-[#0040c10d] border border-[#0040c115] rounded-2xl px-10 py-8">
+        <div className="mt-10 md:mt-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#0040c10d] border border-[#0040c115] rounded-2xl px-6 py-6 md:px-10 md:py-8">
           <div>
-            <p className="text-xl font-normal">Still have questions?</p>
-            <p className="text-gray-400 font-light text-sm mt-1">We're here to help you get started on your learning journey.</p>
+            <p className="text-lg md:text-xl font-normal">Still have questions?</p>
+            <p className="text-gray-400 font-light text-xs md:text-sm mt-1">We're here to help you get started on your learning journey.</p>
           </div>
-          <button className="bg-[#0040c1] text-white px-8 py-3.5 rounded-full font-medium text-sm hover:bg-[#003399] transition-colors">
+          <button className="bg-[#0040c1] text-white px-6 md:px-8 py-3 md:py-3.5 rounded-full font-medium text-sm hover:bg-[#003399] transition-colors w-full sm:w-auto text-center">
             Get in Touch
           </button>
         </div>
