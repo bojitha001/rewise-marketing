@@ -28,17 +28,17 @@ const Benifit1 = () => {
           </p>
 
           <div className="flex flex-wrap gap-3 md:gap-6 mt-6 md:mt-10">
-            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 min-w-[100px] md:min-w-[140px]">
+            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 flex-1 min-w-[90px]">
               <p className="text-2xl md:text-3xl font-light text-white">92<span className="text-[#4d80ff]">%</span></p>
               <p className="text-white/40 text-xs mt-1 font-light">Goal completion rate</p>
             </div>
-            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 min-w-[100px] md:min-w-[140px]">
+            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 flex-1 min-w-[90px]">
               <p className="text-2xl md:text-3xl font-light text-white">14<span className="text-[#4d80ff]">d</span></p>
-              <p className="text-white/40 text-xs mt-1 font-light">Avg. to see improvement</p>
+              <p className="text-white/40 text-xs mt-1 font-light">Avg. improvement</p>
             </div>
-            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 min-w-[100px] md:min-w-[140px]">
+            <div className="border border-white/10 rounded-2xl px-4 md:px-6 py-4 md:py-5 flex-1 min-w-[90px]">
               <p className="text-2xl md:text-3xl font-light text-white">∞</p>
-              <p className="text-white/40 text-xs mt-1 font-light">Plans & subjects supported</p>
+              <p className="text-white/40 text-xs mt-1 font-light">Plans supported</p>
             </div>
           </div>
         </div>
