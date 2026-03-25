@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/all"
 import Benifit1 from "./Components/Benifit1"
 import Benifit2 from "./Components/Benifit2"
 import BenifitText from "./Components/BenifitText"
+import Testimonials from "./Components/Testimonials"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,6 +27,7 @@ const App = () => {
     <Benifit1/>
     <Benifit2/>
     <Features/>
+    <Testimonials/>
     <FAQ/>
     <Footer/>
     </>

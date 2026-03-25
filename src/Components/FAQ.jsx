@@ -45,8 +45,8 @@ const FAQ = () => {
           </div>
           <div className="max-w-xs md:mt-4">
             <p className="text-gray-400 font-light text-sm md:text-base leading-relaxed">
-              Can't find what you're looking for? Reach out to our support team anytime.
-            </p>
+            Can't find what you're looking for? Reach out to our support team anytime.
+          </p>
             <div className="flex items-center gap-2 mt-3 md:mt-4">
               <div className="w-2 h-2 rounded-full bg-[#0040c1]" />
               <a href="#" className="text-sm text-[#0040c1] font-medium hover:underline">Contact Support</a>
